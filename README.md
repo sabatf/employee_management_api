@@ -1,24 +1,21 @@
-# README
+# Employee Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple employee api manager.
 
-Things you may want to cover:
+## System requirements
 
-* Ruby version
+- Ruby version 2.6.5
+- Rails version 6.0.4
+- PostgreSQL version 13.0
 
-* System dependencies
+## Launch the application
 
-* Configuration
+- cd employee_managgement_api
 
-* Database creation
+- copy `env.sample` to `.env` and modify env vars.
 
-* Database initialization
+- Install gem dependencies `bundle install`
 
-* How to run the test suite
+- Create and load the database `rails db:setup`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Add seed data 'rails db:seed'
