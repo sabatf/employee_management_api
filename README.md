@@ -18,4 +18,7 @@ This is a simple employee api manager.
 
 - Create and load the database `rails db:setup`
 
-- Add seed data 'rails db:seed'
+
+## Test the Application
+
+- Run `bundle exec rspec`
