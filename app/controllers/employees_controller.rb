@@ -3,19 +3,19 @@ class EmployeesController < ApplicationController
 
   # GET /employees
   def index
-    @employees = Employee.all.order('start_date')
-    json_response(@employees)
+    @employees = Employee.all
+    render :json => @employees
   end
 
   # POST /employees
   def create
     @employee = Employee.create!(employee_params)
-    json_response(@employee, :created)
+    render json:  @employee
   end
 
   # GET /employees/:id
   def show
-    json_response(@employee)
+    render :json => @employee
   end
 
   # PUT /employees/:id
